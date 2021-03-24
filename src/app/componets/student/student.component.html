@@ -1,0 +1,68 @@
+<div class="card" style="width: 700px;">
+    <form [formGroup]="StudentGroup" class="text-center border border-light p-5">
+        <div class="row">
+            <!-- <div class="col-md-6">
+                <label>User Name</label>
+                <input type="text" formControlName="usernameCtrl" class="form-control mb-4" class="form-control" placeholder="User name">
+                <div class="invalid-feedback">
+                    User Name is Required
+                </div>
+            </div> -->
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" placeholder="Student Name" class="form-control"
+                        formControlName="usernameCtrl">
+                        <span *ngIf="this.StudentGroup.controls['usernameCtrl'].invalid" class="error">User name required </span>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="text" placeholder="Age" formControlName="ageCtrl" class="form-control mb-4">
+                        <span *ngIf="this.StudentGroup.controls['ageCtrl'].invalid" class="error">Password required </span>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        
+                        <input type="hidden" placeholder="ID" formControlName="idctrl" class="form-control mb-4">
+                            
+                    </div>
+
+                  <select formControlName ="selctrl" class="form-control" style = "transform: translate(-200px, 1px);">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+
+                  <div style = "transform: translate(20px,-38px);">
+                  <div class="form-check">
+                    <input class="form-check-input" formControlName = "rbtnctrl" type="radio"  value="0" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" formControlName = "rbtnctrl"type="radio" value="1">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Female
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> <button style = "padding: 8px 25px;" (click)="save()" type="button" class="btn btn-outline-success">Save</button>
+                   </div>
+                   </div>
+                <div class="row">
+                    
+                    <div class="col-md-6"> <button style = "transform: translate(-200px,-38px);" (click)="UpdateStudent()" type="button" class="btn btn-outline-primary">Update</button>
+                    </div>
+                   </div>
+
+                   
+              
+        

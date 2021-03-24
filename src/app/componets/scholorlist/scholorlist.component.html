@@ -1,0 +1,29 @@
+<table class="table" style="width: 1000px;">
+  <thead>
+    <tr>
+      <th Student ID="col">ID</th>
+      <th Student Name="col">Name</th>
+      <th Student Age="col">Age</th>
+      <th Student Rank="col">Rank</th>
+      <th Action="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of scholorlist">
+      <td>{{student.studentId}}</td>
+      <td>{{student.studentName}}</td>
+      <td>{{student.studentAge}}</td>
+      <!-- <td>{{student.gender == 0 ? 'Male': 'Femal' }}</td> -->
+      <td>{{student.rank}}</td>
+
+      <td><button (click)="onDeleteClick(student.studentId)" type="button"
+          class="btn btn-danger">Delete</button>&nbsp;&nbsp;
+        <button [routerLink]="['/scholor', student.studentId, 'edit']" type="button"
+          class="btn btn-primary">Edit</button>
+      </td>
+    </tr>
+
+
+
+  </tbody>
+</table>

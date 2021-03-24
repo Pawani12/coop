@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #6CA5B4;  ">
+    <a class="navbar-brand" routerLink="/rform">Client Form</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/student">Student <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/studentList">Student List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/scholor">Scholor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/scholorlist">Schlor List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/teacher/subject-list">Teacher List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/employee/employee-list">Employee List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login">User Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/clientForm">User Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/clientlist">Clients List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/productForm">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/productList">Product List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/subject-list">Subject List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/empLogin">Employee Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- <button type="button" class="btn btn-success" (click)="showSucess()">Sucess Toaster</button>
+<button type="button" class="btn btn-danger" (click)="showError()">Error Toaster</button>
+<button type="button" class="btn btn-primary" (click)="infoSuccess()">Info Toaster</button>
+<button type="button" class="btn btn-warning" (click)="warningSuccess()">Warning Toaster</button> -->
+
+
+
+<router-outlet></router-outlet>

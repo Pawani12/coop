@@ -1,0 +1,96 @@
+<div class="card" style="width: 700px;">
+  <form #studentForm="ngForm" class="text-center border border-light p-5">
+    <button mat-button color="primary">Primary</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <div class="row">
+      <!-- <div class="col-md-6">
+                <label>User Name</label>
+                <input type="text" formControlName="usernameCtrl" class="form-control mb-4" class="form-control" placeholder="User name">
+                <div class="invalid-feedback">
+                    User Name is Required
+                </div>
+            </div> -->
+
+
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Student Name</label>
+          <input type="text" placeholder="Student Name" class="form-control" [(ngModel)]="student.studentName"
+            name="name">
+          <!-- <span *ngIf="this.StudentGroup.controls['usernameCtrl'].invalid" class="error">User name required </span> -->
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Age</label>
+          <input type="text" placeholder="Age" [(ngModel)]="student.studentAge" name="age" class="form-control mb-4">
+          <!-- <span *ngIf="this.StudentGroup.controls['ageCtrl'].invalid" class="error">Password required </span> -->
+        </div>
+
+        
+
+
+
+
+        <label style="transform: translate(-380px, 30.7px);">Rank</label><select [(ngModel)]="student.rank" name="rank"
+          class="form-control" style="transform: translate(-200px, 1px);">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select><br><br>
+
+
+
+
+
+
+        <!-- <div style = "transform: translate(20px,-38px);">
+                  <div class="form-check">
+                    <input class="form-check-input" [(ngModel)] = "student.name" name = "name" type="radio"  value="0" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" formControlName = "rbtnctrl"type="radio" value="1">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Female
+                    </label>
+                  </div> -->
+      </div>
+
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Disabled</mat-checkbox>
+      </section>
+
+
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Option 1</mat-radio-button>
+        <mat-radio-button value="2">Option 2</mat-radio-button>
+      </mat-radio-group>
+
+      <div class="row">
+        <div class="col-md-6"> <button style="padding: 8px 25px;" (click)="save(student)" type="button"
+            class="btn btn-outline-success">Save</button>
+        </div>
+      </div>
+      <div class="row">
+
+        
+
+      <!-- <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker> -->
+
+      <!-- <mat-form-field appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field> -->
+        
